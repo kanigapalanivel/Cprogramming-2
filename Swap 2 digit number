@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main() {
+    int num;
+    int first_digit, second_digit;
+
+    // Read the number from user
+    scanf("%d", &num);
+
+    // If the number is less than 10, print nothing
+    if (num < 10) {
+        return 0;  // No output for single-digit numbers
+    }
+
+    // Extract only the first two digits
+    while (num >= 100) {
+        num /= 10;
+    }
+
+    // Swap the two digits
+    first_digit = num / 10;
+    second_digit = num % 10;
+
+    // Print the swapped result
+    printf("%d%d\n", second_digit, first_digit);
+
+    return 0;
+}
