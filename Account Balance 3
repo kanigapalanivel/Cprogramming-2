@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    int balance;
+    int balance,choice,amount;
     scanf("%d", &balance);
     scanf("%d", &choice);
 
